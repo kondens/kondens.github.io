@@ -1,0 +1,252 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+@font-face {
+    font-family: whitney;
+    src: url('res/whitney/whitney_semibold-webfont.woff');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: whitney;
+    src: url('res/whitney/whitney_book-webfont.woff2');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: interstate-regular;
+    src: url('res/interstate-regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: interstate-regular;
+    src: url('res/interstate-light.ttf');
+    font-weight: 300;
+}
+
+body {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    color: rgba(255,255,255,0.87);
+    font-family: "whitney", sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 3.175em;
+    margin-bottom: 12px;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 2.369em;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 1.777em;
+}
+
+p {
+    font-weight: 300;
+    line-height: 1.4em;
+}
+
+emph {
+    font-style: italic;
+}
+
+.col {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+video#bgloop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -100;
+    /*filter: blur(4px);*/
+}
+
+div#bgoverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: 120%;
+    z-index: -100;
+    background-size: cover;
+    background: linear-gradient(rgba(38,49,55,1) 0%, rgba(38,49,55,0.9) 20%, rgba(38,49,55,0.5) 55%, rgba(255,255,255,1) 100%);
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 960px;
+    padding-top: 72px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    padding: 12px 0;
+
+    border-top: 1px solid #BDBDBD;
+}
+
+.nav {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.nav a {
+    padding-left: 12px;
+    
+    color: rgba(255,255,255,0.54);
+    text-transform: uppercase;
+}
+
+a.cta {
+    display: inline-block;
+    padding: 18px;
+    margin: 18px 1px;
+
+    line-height: 1em;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #e91e63;
+    border-radius: 4px;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.24), 0 2px 8px rgba(0,0,0,0.24), 0 12px 48px rgba(0,0,0,0.12), 0 12px 18px rgba(0,0,0,0.12);
+}
+
+.abstract {
+    padding: 36px 0;
+}
+
+.executive-summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-top: 54px;
+}
+
+.executive-summary p:first-child { padding-right: 54px; }
+
+.executive-summary p {
+    flex: 1;
+}
+
+.workflow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: rgba(0,0,0,0.87);
+}
+
+.workflow h2 {
+    margin-bottom: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.workflow h3 {
+    margin-bottom: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 36px 84px;
+}
+
+.step p {
+    flex: 1;
+    padding: 0 18px;
+    text-align: justify;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid #BDBDBD;
+}
