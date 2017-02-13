@@ -7,39 +7,42 @@
     </head>
     <body>
         <div class="container">
-            <video id="bgloop" playsinline autoplay muted loop poster="res/shot.jpg">
-                <source src="res/condensing.mp4" type="video/mp4">
-            </video>
-            <div id="bgoverlay"></div>
-            <div class="header">
-                <div>kondens</div>
-                <div class="nav">
-                    <a>Workflow</a>
-                    <a>Pricing</a>
-                    <!-- <a>Cases</a>
-                    <a>Articles</a> -->
-                    <!-- <a>Team</a> -->
-                </div>
+            <div id="bgcontainer">
+                <video id="bgloop" playsinline autoplay muted loop poster="res/shot.jpg">
+                    <source src="res/condensing.mp4" type="video/mp4">
+                </video>
+                <div id="bgoverlay"></div>
             </div>
-            <div class="abstract">
-                <h1>kondens augments human ability</h1>
-                <h1>to solve complex problems.</h1>
+            <div style="height: 110vh;">
+                <div class="header">
+                    <div>kondens</div>
+                    <div class="nav">
+                        <a href="#workflow" data-scroll>Workflow</a>
+                        <a href="#pricing">Pricing</a>
+                        <!-- <a>Cases</a>
+                        <a>Articles</a> -->
+                        <!-- <a>Team</a> -->
+                    </div>
+                </div>
+                <div class="abstract">
+                    <h1>kondens augments human ability</h1>
+                    <h1>to solve complex problems.</h1>
 
-                <div class="executive-summary">
-                    <p>
-                        People, even the smartest, are terrible at making good decisions whenever more than a couple of interdependent factors are involved. <br /><br />
-                        Our world is full of such complex problems.
-                    </p>
-                    <div class="col">
+                    <div class="executive-summary">
                         <p>
-                            We are working for a future in which knowledge workers can perform complex analyses in a fraction of the time required today. We want to enable a rich, more efficient transfer of knowledge.
+                            People, even the smartest, are terrible at making good decisions whenever more than a couple of interdependent factors are involved. <br /><br />
+                            Our world is full of such complex problems.
                         </p>
-                        <a class="cta" href="#">Request a demo</a>
+                        <div class="col">
+                            <p>
+                                We are working for a future in which knowledge workers can perform complex analyses in a fraction of the time required today. We want to enable a rich, more efficient transfer of knowledge.
+                            </p>
+                            <a class="cta" href="#">Request a demo</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div style="height: 600px"></div>
-            <div class="workflow">
+            <div id="workflow">
                 <h2>Problem-solving with kondens</h2>
                 <p style="font-size: 1.333em; max-width: 600px; text-align: center; margin-bottom: 54px;">
                     We see solving complex problems and making strategic decisions as a continuous cycle of four steps, condensing a vast cloud of factors into concise, well-reasoned and actionable solutions.
