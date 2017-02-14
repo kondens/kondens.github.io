@@ -110,6 +110,43 @@ emph {
     font-style: italic;
 }
 
+a {
+    color: #e91e63;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c2185b;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 6px;
+    font-size: 1em;
+    border: 1px solid #BDBDBD;
+    border-radius: 4px;
+}
+
+button {
+    display: inline-block;
+    padding: 0 12px;
+    height: 32px;
+    margin-left: 6px;
+
+    font-family: whitney, sans-serif;
+    font-size: 0.75em;
+    font-weight: 500;
+    line-height: 1em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: #e91e63;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+}
+
 .col {
     display: flex;
     flex: 1;
@@ -255,8 +292,23 @@ a.cta {
     text-align: justify;
 }
 
-.footer {
+#footer {
     display: flex;
     flex-direction: row;
+    padding: 18px 0 36px 0;
+    font-weight: 300;
+    line-height: 1.4em;
+    color: rgba(0,0,0,0.54);
     border-top: 1px solid #BDBDBD;
+}
+
+#footer #newsletter-signup {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+}
+
+#footer #contact {
+    flex: 0;
+    align-items: flex-end;
 }
