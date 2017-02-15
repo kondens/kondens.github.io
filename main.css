@@ -107,7 +107,7 @@ p {
     line-height: 1.4em;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 30rem) {
     h1 { font-size: 2.369rem; }
     h2 { font-size: 1.777rem; }
     h3 { font-size: 1.333rem; }
@@ -305,14 +305,29 @@ a.cta {
     flex: 1;
     min-width: 20em;
     max-width: 24em;
-    margin: 0 1em;
+    margin: 0 1rem;
     text-align: justify;
+}
+
+@media (max-width: 48rem) {
+    #workflow h2 {
+        text-align: left;
+    }
+    
+    #workflow h3 {
+        text-align: left;
+    }
+
+    .step p {
+        margin: 0 0 1rem 0;
+    }
 }
 
 #footer {
     display: flex;
-    flex-direction: row;
-    padding: 18px 2em 36px 2em;
+    flex-flow: row wrap;
+    margin: 0 2em;
+    padding: 1.125em 0 2.25em 0;
     font-weight: 300;
     line-height: 1.4em;
     color: rgba(0,0,0,0.54);
@@ -323,9 +338,20 @@ a.cta {
     flex: 1;
     display: flex;
     align-items: stretch;
+    min-width: 19rem;
 }
 
 #footer #contact {
-    flex: 0;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
     align-items: flex-end;
+}
+
+@media (max-width: 30rem) {
+    #footer #contact {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 1.125em;
+    }
 }
