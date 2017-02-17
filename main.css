@@ -90,6 +90,7 @@ h1 {
     font-weight: 500;
     font-size: 3.175rem;
     margin-bottom: 12px;
+    line-height: 1.2;
 }
 
 h2 {
@@ -107,7 +108,7 @@ p {
     line-height: 1.4em;
 }
 
-@media (max-width: 30rem) {
+@media (max-width: 36rem) {
     h1 { font-size: 2.369rem; }
     h2 { font-size: 1.777rem; }
     h3 { font-size: 1.333rem; }
@@ -160,8 +161,7 @@ button {
 
 .col {
     display: flex;
-    flex: 1;
-    flex-direction: column;
+    flex-flow: column wrap;
     align-items: flex-start;
 }
 
@@ -170,6 +170,7 @@ button {
     flex: 1;
     flex-flow: row wrap;
     align-items: flex-start;
+    justify-content: center;
 }
 
 video#bgloop {
@@ -258,16 +259,39 @@ a.cta {
 #executive-summary {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 
     margin-top: 54px;
 }
 
-#executive-summary p:first-child { padding-right: 54px; }
+#executive-summary .col {
+    flex: 0 1 20em;
+    margin-left: 2rem;
+}
 
-#executive-summary p {
-    flex: 1;
+#executive-summary .col > p {
+    flex: 1; 
     min-width: 20em;
+    max-width: 24em;
+}
+
+#executive-summary > p {
+    flex: 1 1 20em;
+    min-width: 20em;
+    max-width: 24em;
+    margin-right: 2rem;
+}
+
+@media (max-width: 49rem) {
+    h1 br { display: none;}
+    #executive-summary .col {
+        margin: 0 2rem 0 0;
+    }
+}
+
+@media (max-width: 36rem) {
+    #executive-summary .col {margin: 0;}
+    #executive-summary > p {margin: 0;}
 }
 
 #workflow {
@@ -297,30 +321,24 @@ a.cta {
 .step {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 36px 0;
+    padding: 30px 0;
 }
 
 .step p {
-    flex: 1;
+    flex: 1 1 20em;
     min-width: 20em;
     max-width: 24em;
-    margin: 0 1rem;
+    margin: 1rem;
     text-align: justify;
 }
 
-@media (max-width: 48rem) {
-    #workflow h2 {
-        text-align: left;
-    }
-    
-    #workflow h3 {
-        text-align: left;
-    }
-
-    .step p {
-        margin: 0 0 1rem 0;
-    }
+@media (max-width: 36rem) {
+    .header { margin-top: 24px; }
+    #workflow h2 { text-align: left; }
+    #workflow h3 { text-align: left; }
+    .row { justify-content: flex-start; }
+    .step { padding: 12px 0; }
+    .step p { margin: 0 0 1rem 0; }
 }
 
 #footer {
