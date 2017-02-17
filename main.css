@@ -184,7 +184,7 @@ video#bgloop {
     /*filter: blur(4px);*/
 }
 
-#bgimg {
+/*#bgimg {
     position: absolute;
     object-fit: cover;
     top: 0;
@@ -192,7 +192,7 @@ video#bgloop {
     width: 100%;
     height: 110%;
     z-index: -150;
-}
+}*/
 
 #bgoverlay {
     position: absolute;

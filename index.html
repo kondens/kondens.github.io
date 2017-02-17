@@ -10,10 +10,7 @@
     </head>
     <body>
         <div class="container">
-            <div id="bgcontainer">
-                <div id="bgoverlay"></div>
-            </div>
-            <div style="height: 110vh;padding: 0 2em;overflow: visible;">
+            <div id="frontpage" style="padding: 0 2em;overflow: visible;">
                 <div class="header">
                     <div>kondens</div>
                     <div class="nav">
@@ -39,6 +36,9 @@
                             <a class="cta" href="mailto:team@kondens.ch">Request a demo</a>
                         </div>
                     </div>
+                </div>
+                <div id="bgcontainer">
+                    <div id="bgoverlay"></div>
                 </div>
             </div>
             <div id="workflow">
@@ -159,13 +159,17 @@
                     var bgcontainer = document.getElementById('bgcontainer');
                     bgcontainer.appendChild(newVideoElement);
                 } else {
-                    var newImgElement = document.createElement('img');
-                    newImgElement.setAttribute('id', 'bgimg');
-                    newImgElement.setAttribute('src', 'res/shot.jpg');
-                    newImgElement.setAttribute('alt', '');
+                    // var newImgElement = document.createElement('img');
+                    // newImgElement.setAttribute('id', 'bgimg');
+                    // newImgElement.setAttribute('src', 'res/shot.jpg');
+                    // newImgElement.setAttribute('alt', '');
 
-                    var bgcontainer = document.getElementById('bgcontainer');
-                    bgcontainer.appendChild(newImgElement);
+                    // var bgcontainer = document.getElementById('bgcontainer');
+                    // bgcontainer.appendChild(newImgElement);
+                    var frontpage = document.getElementById('frontpage');
+                    var style = frontpage.getAttribute('style');
+                    style += "background-image: url('res/shot-mobile.jpg');";
+                    frontpage.setAttribute('style', style);
                 }
             })();
         </script>
