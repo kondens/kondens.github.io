@@ -10,7 +10,7 @@
     </head>
     <body>
         <div class="container">
-            <div id="frontpage" style="padding: 0 2em;overflow: visible;">
+            <div id="frontpage" style="padding: 0 2em;overflow: visible; height: 110vh;">
                 <div class="header">
                     <div>kondens</div>
                     <div class="nav">
@@ -167,9 +167,8 @@
                     // var bgcontainer = document.getElementById('bgcontainer');
                     // bgcontainer.appendChild(newImgElement);
                     var frontpage = document.getElementById('frontpage');
-                    var style = frontpage.getAttribute('style');
-                    style += "background-image: url('res/shot-mobile.jpg');";
-                    frontpage.setAttribute('style', style);
+                    frontpage.style.removeProperty("height");
+                    frontpage.style.setProperty("background-image", "url('res/shot-mobile.jpg')");
                 }
             })();
         </script>
