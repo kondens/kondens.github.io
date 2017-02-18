@@ -250,6 +250,10 @@ a.cta {
     box-shadow: 0 4px 4px rgba(0,0,0,0.24), 0 2px 8px rgba(0,0,0,0.24), 0 12px 48px rgba(0,0,0,0.12), 0 12px 18px rgba(0,0,0,0.12);
 }
 
+a.cta:active {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.24), 0 1px 4px rgba(0,0,0,0.24), 0 6px 24px rgba(0,0,0,0.12), 0 6px 9px rgba(0,0,0,0.12);
+}
+
 .abstract {
     padding: 36px 0;
 }
