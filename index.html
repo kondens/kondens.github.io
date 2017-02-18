@@ -4,8 +4,8 @@
         <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0">
         
         <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6690976/6471772/css/fonts.css" />
-        <link rel="stylesheet" type="text/css" href="/main.css" />
-        <link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
+        <link rel="stylesheet" type="text/css" href="/static/main.css" />
+        <link rel="shortcut icon" href="/static/favicon.ico"/>
 
         <title>kondens - Augmenting human ability to solve complex problems</title>
 
@@ -141,7 +141,7 @@
             </div>
         </div>
 
-        <script type="text/javascript" src="scroll.js"></script>
+        <script type="text/javascript" src="/static/scroll.js"></script>
         <script type="text/javascript">
             smoothScroll.init();
         </script>
@@ -155,11 +155,11 @@
                     newVideoElement.setAttribute('autoplay', 'autoplay');
                     newVideoElement.setAttribute('loop', 'loop');
                     newVideoElement.setAttribute('muted', 'muted');
-                    newVideoElement.setAttribute('poster', '/res/shot.jpg');
+                    newVideoElement.setAttribute('poster', '/static/res/shot.jpg');
                     newVideoElement.setAttribute('id', 'bgloop');
 
                     var source = document.createElement('source');
-                    source.setAttribute('src', '/res/condensing.mp4');
+                    source.setAttribute('src', '/static/res/condensing.mp4');
                     source.setAttribute('type', 'video/mp4');
                     newVideoElement.appendChild(source);
 
@@ -168,14 +168,14 @@
                 } else {
                     // var newImgElement = document.createElement('img');
                     // newImgElement.setAttribute('id', 'bgimg');
-                    // newImgElement.setAttribute('src', '/res/shot.jpg');
+                    // newImgElement.setAttribute('src', '/static/res/shot.jpg');
                     // newImgElement.setAttribute('alt', '');
 
                     // var bgcontainer = document.getElementById('bgcontainer');
                     // bgcontainer.appendChild(newImgElement);
                     var frontpage = document.getElementById('frontpage');
                     frontpage.style.removeProperty("height");
-                    frontpage.style.setProperty("background-image", "url('/res/shot-mobile.jpg')");
+                    frontpage.style.setProperty("background-image", "url('/static/res/shot-mobile.jpg')");
                 }
             })();
         </script>
