@@ -3,8 +3,9 @@
     <head>
         <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0">
         
-        <link rel="stylesheet" type="text/css" href="main.css" />
-        <link rel="shortcut icon" type="image/png" href="res/favicon.ico"/>
+        <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6690976/6471772/css/fonts.css" />
+        <link rel="stylesheet" type="text/css" href="/main.css" />
+        <link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
 
         <title>kondens - Augmenting human ability to solve complex problems</title>
 
@@ -154,11 +155,11 @@
                     newVideoElement.setAttribute('autoplay', 'autoplay');
                     newVideoElement.setAttribute('loop', 'loop');
                     newVideoElement.setAttribute('muted', 'muted');
-                    newVideoElement.setAttribute('poster', 'res/shot.jpg');
+                    newVideoElement.setAttribute('poster', '/res/shot.jpg');
                     newVideoElement.setAttribute('id', 'bgloop');
 
                     var source = document.createElement('source');
-                    source.setAttribute('src', 'res/condensing.mp4');
+                    source.setAttribute('src', '/res/condensing.mp4');
                     source.setAttribute('type', 'video/mp4');
                     newVideoElement.appendChild(source);
 
@@ -167,14 +168,14 @@
                 } else {
                     // var newImgElement = document.createElement('img');
                     // newImgElement.setAttribute('id', 'bgimg');
-                    // newImgElement.setAttribute('src', 'res/shot.jpg');
+                    // newImgElement.setAttribute('src', '/res/shot.jpg');
                     // newImgElement.setAttribute('alt', '');
 
                     // var bgcontainer = document.getElementById('bgcontainer');
                     // bgcontainer.appendChild(newImgElement);
                     var frontpage = document.getElementById('frontpage');
                     frontpage.style.removeProperty("height");
-                    frontpage.style.setProperty("background-image", "url('res/shot-mobile.jpg')");
+                    frontpage.style.setProperty("background-image", "url('/res/shot-mobile.jpg')");
                 }
             })();
         </script>

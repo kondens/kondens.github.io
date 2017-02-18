@@ -47,19 +47,7 @@ table {
     border-spacing: 0;
 }
 
-
-
-@font-face {
-    font-family: whitney;
-    src: url('res/whitney/whitney_semibold-webfont.woff');
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: whitney;
-    src: url('res/whitney/whitney_book-webfont.woff2');
-    font-weight: 300;
-}
+/************/
 
 html {
     font-size: 16px;
@@ -67,32 +55,38 @@ html {
 
 body {
     color: rgba(255,255,255,0.87);
-    font-family: "whitney", sans-serif;
+    font-family: "Whitney SSm A", "Whitney SSm B", sans-serif;
     font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
 
     background-color: #fff;
     scroll-behavior: smooth;
 }
 
 h1 {
-    font-weight: 500;
     font-size: 3.175rem;
-    margin-bottom: 12px;
+    font-style: normal;
+    font-weight: 600;
     line-height: 1.2;
+    margin-bottom: 12px;
 }
 
 h2 {
-    font-weight: 500;
     font-size: 2.369rem;
+    font-style: normal;
+    font-weight: 600;
 }
 
 h3 {
-    font-weight: 500;
     font-size: 1.777em;
+    font-style: normal;
+    font-weight: 600;
 }
 
 p {
-    font-weight: 300;
+    font-style: normal;
+    font-weight: 400;
     line-height: 1.4em;
 }
 
@@ -135,16 +129,18 @@ button {
     height: 32px;
     margin-left: 6px;
 
-    font-family: whitney, sans-serif;
+    font-family: "Whitney SSm A", "Whitney SSm B", sans-serif;
     font-size: 0.75em;
-    font-weight: 500;
+    font-style: normal;
+    font-weight: 600;
     line-height: 1em;
     letter-spacing: 1px;
     text-transform: uppercase;
+    color: #fff;
+
     background-color: #e91e63;
     border: none;
     border-radius: 4px;
-    color: #fff;
 }
 
 .col {
@@ -210,6 +206,9 @@ video#bgloop {
     margin-top: 72px;
     padding: 12px 0;
 
+    font-style: normal;
+    font-weight: 600;
+
     border-top: 1px solid #BDBDBD;
 }
 
@@ -222,7 +221,7 @@ video#bgloop {
 
 .nav a {
     padding-left: 12px;
-    
+
     color: rgba(255,255,255,0.54);
     text-transform: uppercase;
     text-decoration: none;
@@ -238,15 +237,17 @@ a.cta {
     margin: 18px 1px;
     z-index: 100;
 
+    font-style: normal;
+    font-weight: 600;
     line-height: 1em;
     text-align: center;
     text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     color: #ffffff;
+
     background-color: #e91e63;
     border-radius: 4px;
-
-    letter-spacing: 1px;
-    text-transform: uppercase;
     box-shadow: 0 4px 4px rgba(0,0,0,0.24), 0 2px 8px rgba(0,0,0,0.24), 0 12px 48px rgba(0,0,0,0.12), 0 12px 18px rgba(0,0,0,0.12);
 }
 
@@ -308,10 +309,12 @@ a.cta:active {
 
 #workflow h2 {
     margin-bottom: 18px;
+
+    font-style: normal;
+    font-weight: 500;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-weight: 500;
 }
 
 #workflow h3 {
@@ -348,9 +351,12 @@ a.cta:active {
     flex-flow: row wrap;
     margin: 0 2em;
     padding: 1.125em 0 2.25em 0;
-    font-weight: 300;
+    
+    font-style: normal;
+    font-weight: 400;
     line-height: 1.4em;
     color: rgba(0,0,0,0.54);
+    
     border-top: 1px solid #BDBDBD;
 }
 
