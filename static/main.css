@@ -325,6 +325,9 @@ a.cta:active {
     max-width: 24em;
     margin: 1rem;
     text-align: justify;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
 }
 
 @media (max-width: 36rem) {
