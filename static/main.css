@@ -367,7 +367,7 @@ a.cta:active {
     align-items: flex-end;
 }
 
-@media (max-width: 30rem) {
+@media (max-width: 36rem) {
     #footer #contact {
         flex-direction: row;
         justify-content: space-between;
