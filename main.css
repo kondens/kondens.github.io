@@ -61,18 +61,6 @@ table {
     font-weight: 300;
 }
 
-@font-face {
-    font-family: interstate-regular;
-    src: url('res/interstate-regular.ttf');
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: interstate-regular;
-    src: url('res/interstate-light.ttf');
-    font-weight: 300;
-}
-
 html {
     font-size: 16px;
 }
