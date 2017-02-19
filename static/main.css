@@ -295,7 +295,7 @@ a.cta:active {
 }
 
 a#scroll-indicator {
-    display: block;
+    display: inline-block;
     margin-bottom: 1rem;
 }
 
