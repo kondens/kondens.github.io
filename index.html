@@ -16,7 +16,7 @@
     </head>
     <body>
         <div class="container">
-            <div id="frontpage" style="padding: 0 2em;overflow: visible; height: 110vh;">
+            <div id="frontpage">
                 <div class="header">
                     <div>kondens</div>
                     <div class="nav">
@@ -27,7 +27,7 @@
                         <!-- <a>Team</a> -->
                     </div>
                 </div>
-                <div class="abstract">
+                <div id="abstract">
                     <h1>kondens augments human ability <br> to solve complex problems.</h1>
 
                     <div id="executive-summary">
@@ -43,6 +43,13 @@
                         </div>
                     </div>
                 </div>
+                <a id="scroll-indicator" href="#workflow" data-scroll>
+                    <svg width="64" height="64">
+                        <circle cx="32" cy="32" r="30" fill="transparent" stroke="rgba(255,255,255,0.87)" stroke-width="2" />
+                        <polyline points="10,26 32,44, 54,26"
+                                  style="fill:transparent;stroke-width:4;stroke:rgba(255,255,255,0.87)" />
+                    </svg>
+                </a>
                 <div id="bgcontainer">
                     <div id="bgoverlay"></div>
                 </div>
