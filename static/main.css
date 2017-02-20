@@ -366,9 +366,11 @@ a#scroll-indicator {
 }
 
 #footer #newsletter-signup {
-    flex: 1;
     display: flex;
+    flex-flow: column wrap;
     align-items: stretch;
+
+    flex: 1;
     min-width: 19rem;
 }
 
@@ -380,6 +382,10 @@ a#scroll-indicator {
 }
 
 @media (max-width: 36rem) {
+    /*these can be removed once Safari bug is fixed (see https://bugs.webkit.org/show_bug.cgi?id=136041)*/
+    #footer { flex-direction: column; }
+    #footer #newsletter-signup { flex-direction: row; }
+
     #footer #contact {
         flex-direction: row;
         justify-content: space-between;

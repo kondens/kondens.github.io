@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         
         <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6690976/6471772/css/fonts.css" />
         <link rel="stylesheet" type="text/css" href="/static/main.css" />
@@ -123,7 +123,7 @@
                 </div>
             </div>
             <div id="footer">
-                <div id="newsletter-signup" class="col">
+                <div id="newsletter-signup">
                     <div id="mc_embed_signup">
                         <form action="//kondens.us15.list-manage.com/subscribe/post?u=fe84d163be583a0be64d8173f&amp;id=ea2d0e134c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                             <div id="mc_embed_signup_scroll" class="row" style="flex-wrap: nowrap; align-items: center;">
@@ -181,13 +181,6 @@
                     var bgcontainer = document.getElementById('bgcontainer');
                     bgcontainer.appendChild(newVideoElement);
                 } else {
-                    // var newImgElement = document.createElement('img');
-                    // newImgElement.setAttribute('id', 'bgimg');
-                    // newImgElement.setAttribute('src', '/static/res/shot.jpg');
-                    // newImgElement.setAttribute('alt', '');
-
-                    // var bgcontainer = document.getElementById('bgcontainer');
-                    // bgcontainer.appendChild(newImgElement);
                     var frontpage = document.getElementById('frontpage');
                     frontpage.style.removeProperty("height");
                     frontpage.style.setProperty("background-image", "url('/static/res/shot-mobile.jpg')");
